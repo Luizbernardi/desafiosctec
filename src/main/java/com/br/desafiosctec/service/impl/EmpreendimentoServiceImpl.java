@@ -8,7 +8,6 @@ import com.br.desafiosctec.model.Empreendimento;
 import com.br.desafiosctec.repository.EmpreendimentoRepository;
 import com.br.desafiosctec.service.EmpreendimentoService;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
