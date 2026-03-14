@@ -78,7 +78,7 @@ Para executar o projeto localmente é necessário possuir **Java 21** instalado.
 ### 1 - Clonar o repositório
 
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/Luizbernardi/desafiosctec.git
 ```
 
 ### 2 - Acessar a pasta raiz do projeto
