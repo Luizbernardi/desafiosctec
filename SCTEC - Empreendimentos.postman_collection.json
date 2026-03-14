@@ -1,0 +1,132 @@
+{
+  "info": {
+    "_postman_id": "0a6bc09f-c026-45d8-a03c-34e0362671ef",
+    "name": "SCTEC - Empreendimentos",
+    "description": "Collection para testar o CRUD de Empreendimentos do desafio SCTEC.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "36474830"
+  },
+  "item": [
+    {
+      "name": "Criar Empreendimento",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nomeEmpreendimento\": \"Tech Solutions SC\",\n  \"nomeEmpreendedor\": \"Luiz Bernardi\",\n  \"municipio\": \"Florianópolis\",\n  \"segmento\": \"TECNOLOGIA\",\n  \"email\": \"contato@techsolutions.com.br\",\n  \"status\": true\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/empreendimentos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "empreendimentos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Listar Todos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/empreendimentos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "empreendimentos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Buscar por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/empreendimentos/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "empreendimentos",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Atualizar Empreendimento",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nomeEmpreendimento\": \"Tech Solutions SC - Filial\",\n  \"nomeEmpreendedor\": \"Luiz Bernardi\",\n  \"municipio\": \"Joinville\",\n  \"segmento\": \"TECNOLOGIA\",\n  \"email\": \"filial@techsolutions.com.br\",\n  \"status\": false\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/empreendimentos/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "empreendimentos",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deletar Empreendimento",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/empreendimentos/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "empreendimentos",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
