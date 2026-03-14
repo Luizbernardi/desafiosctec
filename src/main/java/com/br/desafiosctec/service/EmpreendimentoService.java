@@ -2,7 +2,6 @@ package com.br.desafiosctec.service;
 
 import com.br.desafiosctec.dto.EmpreendimentoRequestDTO;
 import com.br.desafiosctec.dto.EmpreendimentoResponseDTO;
-
 import java.util.List;
 
 public interface EmpreendimentoService {
